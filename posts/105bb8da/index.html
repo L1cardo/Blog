@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Matery 主题安装豆瓣插件 | Licardo</title><meta name="author" content="Licardo"><meta name="copyright" content="Licardo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Matery 主题安装豆瓣插件 2019-10-29  前几天发现一个很好用的插件，可以将自己在豆瓣上面的电影、书籍、游戏清单显示在 Hexo 搭建的博客页面上。由于 Matery 也是由 Hexo 驱动的，所以就想的安装来看看。 安装完，配置完，效果是惨不忍睹，可能由于没有适配，画面太美不能想象…… 于是我就自己摸索，看能不能将这个主题适配到 Matery 主题上面，经过一个医学生一下午的坚持不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matery 主题安装豆瓣插件">
+<meta property="og:url" content="https://blog.licardo.cn/posts/105bb8da/index.html">
+<meta property="og:site_name" content="Licardo">
+<meta property="og:description" content="Matery 主题安装豆瓣插件 2019-10-29  前几天发现一个很好用的插件，可以将自己在豆瓣上面的电影、书籍、游戏清单显示在 Hexo 搭建的博客页面上。由于 Matery 也是由 Hexo 驱动的，所以就想的安装来看看。 安装完，配置完，效果是惨不忍睹，可能由于没有适配，画面太美不能想象…… 于是我就自己摸索，看能不能将这个主题适配到 Matery 主题上面，经过一个医学生一下午的坚持不">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/wordpress_utxt.svg">
+<meta property="article:published_time" content="2019-10-29T00:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-26T09:42:54.343Z">
+<meta property="article:author" content="Licardo">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Matery">
+<meta property="article:tag" content="豆瓣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/wordpress_utxt.svg"><link rel="shortcut icon" href="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/favicon.ico"><link rel="canonical" href="https://blog.licardo.cn/posts/105bb8da/index.html"><link rel="preconnect" href="https://cdn.staticfile.org"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/5.0.33/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?335d5a7787e03ba0532c58a4ef332c24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.staticfile.org/egjs-infinitegrid/4.11.1/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Matery 主题安装豆瓣插件',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-26 09:42:54'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/avatar.png" onerror="onerror=null;src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://run.licardo.cn"><i class="fa-fw fas fa-running"></i><span> 跑步</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/wordpress_utxt.svg')"><nav id="nav"><span id="blog-info"><a href="/" title="Licardo"><img class="site-icon" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/avatar.png"/><span class="site-name">Licardo</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://run.licardo.cn"><i class="fa-fw fas fa-running"></i><span> 跑步</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Matery 主题安装豆瓣插件</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-10-29T00:00:00.000Z" title="发表于 2019-10-29 00:00:00">2019-10-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-26T09:42:54.343Z" title="更新于 2024-07-26 09:42:54">2024-07-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Hexo/">Hexo</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Matery 主题安装豆瓣插件"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/105bb8da/#post-comment"><span id="twikoo-count"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Matery-主题安装豆瓣插件"><a href="#Matery-主题安装豆瓣插件" class="headerlink" title="Matery 主题安装豆瓣插件"></a>Matery 主题安装豆瓣插件</h1><blockquote>
+<p>2019-10-29</p>
+</blockquote>
+<p>前几天发现一个很好用的插件，可以将自己在豆瓣上面的电影、书籍、游戏清单显示在 Hexo 搭建的博客页面上。由于 Matery 也是由 Hexo 驱动的，所以就想的安装来看看。</p>
+<p>安装完，配置完，效果是惨不忍睹，可能由于没有适配，画面太美不能想象……</p>
+<p>于是我就自己摸索，看能不能将这个主题适配到 Matery 主题上面，经过一个医学生一下午的坚持不懈，终于将插件进行了适配，准确的来说，是将 Matery 对插件进行了适配，因为插件是别人写的，我改不了😂😂</p>
+<p>最终的显示效果就像下面显示的一样，我觉得还是可以的：</p>
+<p><img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/uPic/Matery%E8%B1%86%E7%93%A3%E6%8F%92%E4%BB%B6%E5%B1%95%E7%A4%BA.png"></p>
+<p>下面就详细的教大家最终怎么样才能达到我这个效果吧</p>
+<h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h3><p>在博客所在文件夹下执行以下命令行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-douban --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h3><h4 id="2-1-配置博客-config-文件"><a href="#2-1-配置博客-config-文件" class="headerlink" title="2.1. 配置博客 config 文件"></a>2.1. 配置博客 config 文件</h4><p>将下面的配置写入博客的 <code>_config.yml</code> 文件里（⚠️ 注意：不是主题的配置文件）</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">douban:</span></span><br><span class="line">  <span class="attr">user:</span> <span class="string">Licardo</span></span><br><span class="line">  <span class="attr">builtin:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">book:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my book title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my book quote&#x27;</span></span><br><span class="line">  <span class="attr">movie:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my movie title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my movie quote&#x27;</span></span><br><span class="line">  <span class="attr">game:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="string">&#x27;This is my game title&#x27;</span></span><br><span class="line">    <span class="attr">quote:</span> <span class="string">&#x27;This is my game quote&#x27;</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>user</strong>: 你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：<a target="_blank" rel="noopener" href="https://www.douban.com/people/xxxxxx/">https://www.douban.com/people/xxxxxx/</a> ，其中的”xxxxxx”就是你的个人ID了。</li>
+<li><strong>builtin</strong>: 是否将生成页面的功能嵌入 <code>hexo s</code> 和 <code>hexo g</code> 中，默认是 <code>false</code> ，另一可选项为 <code>true</code> 。</li>
+<li><strong>title</strong>: 该页面的标题。</li>
+<li><strong>quote</strong>: 写在页面开头的一段话,支持html语法。</li>
+<li><strong>timeout</strong>: 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。</li>
+</ul>
+<p>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。</p>
+<h4 id="2-2-配置-config-文件"><a href="#2-2-配置-config-文件" class="headerlink" title="2.2. 配置 config 文件"></a>2.2. 配置 config 文件</h4><p>在你的主题的 <code>_config.yml</code> 文件中配置以下内容，也就是你存放生成的页面的位置，如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">Archives:</span> <span class="string">/archives</span></span><br><span class="line">  <span class="attr">Books:</span> <span class="string">/books</span>     <span class="comment"># 这是你的书单页面</span></span><br><span class="line">  <span class="attr">Movies:</span> <span class="string">/movies</span>   <span class="comment"># 这是你的电影页面</span></span><br><span class="line">  <span class="attr">Games:</span> <span class="string">/games</span>     <span class="comment"># 这是你的游戏页面</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-适配-Matery"><a href="#3-适配-Matery" class="headerlink" title="3. 适配 Matery"></a>3. 适配 Matery</h3><h4 id="3-1-主题端适配"><a href="#3-1-主题端适配" class="headerlink" title="3.1. 主题端适配"></a>3.1. 主题端适配</h4><p>在你的主题的 <code>/themes/hexo-theme-matery/layout</code> 文件夹下面创建一个名为 <code>douban.ejs</code> 的文件，并将下面的内容复制进去：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- <span class="title function_">partial</span>(<span class="string">&#x27;_partial/post-cover&#x27;</span>) %&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    <span class="selector-class">.hexo-douban-picture</span> <span class="selector-tag">img</span> &#123;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">        <span class="attribute">width</span>: <span class="number">100%</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;contact&quot;</span> <span class="attr">class</span>=<span class="string">&quot;container chip-container&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span> <span class="attr">style</span>=<span class="string">&quot;padding: 30px&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;margin: 10px 0 10px 0px;&quot;</span>&gt;</span>&lt;%= page.title %&gt;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                &lt;%- page.content %&gt;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">h3</span> <span class="attr">style</span>=<span class="string">&quot;margin: 5px 0 5px 5px;&quot;</span>&gt;</span>如果你有好的内容推荐，欢迎在下面留言！<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &lt;% if (theme.gitalk &amp;&amp; theme.gitalk.enable) &#123; %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;%- partial(&#x27;_partial/gitalk&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">            &lt;% if (theme.gitment.enable) &#123; %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;%- partial(&#x27;_partial/gitment&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">            &lt;% if (theme.disqus.enable) &#123; %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;%- partial(&#x27;_partial/disqus&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">            &lt;% if (theme.livere &amp;&amp; theme.livere.enable) &#123; %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;%- partial(&#x27;_partial/livere&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">            &lt;% if (theme.valine &amp;&amp; theme.valine.enable) &#123; %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;%- partial(&#x27;_partial/valine&#x27;) %&gt;</span></span><br><span class="line"><span class="language-xml">            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-插件适配"><a href="#3-2-插件适配" class="headerlink" title="3.2. 插件适配"></a>3.2. 插件适配</h4><p>在你的博客文件夹内找到这个文件夹 <code>/node_modules/hexo-douban/lib</code> ，这个文件夹内找到以下三个文件： <code>books-generator.js</code> 、<code>games-generator.js</code> 、<code>movies-generator.js</code> </p>
+<p>将每个文件内最下面的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout</span>: [<span class="string">&#x27;page&#x27;</span>, <span class="string">&#x27;post&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>改为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout</span>: [<span class="string">&#x27;page&#x27;</span>, <span class="string">&#x27;douban&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>上面提到的三个文件都要改！要是以后插件更新了，你的页面出问题了，那么这个地方就要重新改。</p>
+<h3 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h3><p>所有的事情都准备好了，现在你可以生成你的页面，然后部署到相应的平台</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo douban</span><br></pre></td></tr></table></figure>
+
+<p>就是这一行命令就行了，就可以生成相应的豆瓣页面了。</p>
+<p>当然了，你也可以使用简化命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是</strong>，通常大家都喜欢用 <code>hexo d</code> 来作为 <code>hexo deploy</code> 命令的简化，但是当安装了 <code>hexo douban</code> 之后，就不能用 <code>hexo d</code> 了，因为 <code>hexo douban</code> 跟 <code>hexo deploy</code> 的前缀都是 <code>hexo d</code> ，你以后执行的 <code>hexo d</code> 将不再是 Hexo 页面的生成，而是豆瓣页面的生成</p>
+<p>以下是可选的命令参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-h, --<span class="built_in">help</span>    <span class="comment"># 帮助页面</span></span><br><span class="line">-b, --books   <span class="comment"># 只生成书单页面</span></span><br><span class="line">-g, --games   <span class="comment"># 只生成游戏页面</span></span><br><span class="line">-m, --movies  <span class="comment"># 只生成电影页面</span></span><br></pre></td></tr></table></figure>
+
+<p>如果在配置文件中配置了 <code>builtin</code> 参数为 <code>true</code> ，那么除了可以使用 <code>hexo douban</code> 命令之外，<code>hexo g</code> 或 <code>hexo s</code> 也内嵌了生成页面的功能。</p>
+<div style="display: flex;align-items: center;justify-content: space-evenly;padding-top: 40px;">
+  <img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/notbyai_cn.png" alt="真人撰写" style="height: 42px;">
+  <img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/notbyai_en.png" alt="written by human" style="height: 42px;">
+</div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.licardo.cn">Licardo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.licardo.cn/posts/105bb8da/">https://blog.licardo.cn/posts/105bb8da/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.licardo.cn" target="_blank">Licardo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/Matery/">Matery</a><a class="post-meta__tags" href="/tags/%E8%B1%86%E7%93%A3/">豆瓣</a></div><div class="post_share"><div class="social-share" data-image="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/wordpress_utxt.svg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/75d768f6/" title="LiveText-Swift 实时监测文本改变"><img class="cover" src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/code_review_l1q9.svg" onerror="onerror=null;src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">LiveText-Swift 实时监测文本改变</div></div></a></div><div class="next-post pull-right"><a href="/posts/20e9a1d8/" title="对医学人才培养过程的想法"><img class="cover" src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/exams_g4ow.svg" onerror="onerror=null;src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">对医学人才培养过程的想法</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/e53fd116/" title="Matery 主题字体替换"><img class="cover" src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/fashion_blogging_w9ol.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-10-04</div><div class="title">Matery 主题字体替换</div></div></a></div><div><a href="/posts/f1670866/" title="Matery 主题详细配置教程"><img class="cover" src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/content_vbqo.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-10-04</div><div class="title">Matery 主题详细配置教程</div></div></a></div><div><a href="/posts/57ddc7cc/" title="Hexo 搭建个人博客详细教程"><img class="cover" src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/blogging_vpvv.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-30</div><div class="title">Hexo 搭建个人博客详细教程</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/avatar.png" onerror="this.onerror=null;this.src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="avatar"/></div><div class="author-info__name">Licardo</div><div class="author-info__description">喜欢编程的医学生</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/L1cardo"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/L1cardo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:albert.abdilim@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://twitter.com/AlbertAbdilim" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a><a class="social-icon" href="https://weibo.com/1935602951" target="_blank" title="Weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://space.bilibili.com/7403418" target="_blank" title="Bilibili"><i class="fab fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客, 喜欢请收藏!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Matery-%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E8%B1%86%E7%93%A3%E6%8F%92%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">Matery 主题安装豆瓣插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2-config-%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">2.1. 配置博客 config 文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E9%85%8D%E7%BD%AE-config-%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">2.2. 配置 config 文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%82%E9%85%8D-Matery"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. 适配 Matery</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E4%B8%BB%E9%A2%98%E7%AB%AF%E9%80%82%E9%85%8D"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">3.1. 主题端适配</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E6%8F%92%E4%BB%B6%E9%80%82%E9%85%8D"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">3.2. 插件适配</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BD%BF%E7%94%A8"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 使用</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2a02866e/" title="FIT 文件对比工具"><img src="https://staticcn.coros.com/coros-web-faq/public/img/banner.ff751ead.png" onerror="this.onerror=null;this.src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="FIT 文件对比工具"/></a><div class="content"><a class="title" href="/posts/2a02866e/" title="FIT 文件对比工具">FIT 文件对比工具</a><time datetime="2024-07-14T00:00:00.000Z" title="发表于 2024-07-14 00:00:00">2024-07-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5a01448b/" title="板载 ELRS 密码设置"><img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ExpressLRS/ExpressLRS-Hardware/master/img/banner.png" onerror="this.onerror=null;this.src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="板载 ELRS 密码设置"/></a><div class="content"><a class="title" href="/posts/5a01448b/" title="板载 ELRS 密码设置">板载 ELRS 密码设置</a><time datetime="2022-06-03T00:00:00.000Z" title="发表于 2022-06-03 00:00:00">2022-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/31bc9bc5/" title="Apple Device Model Name"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/web_devices_ad58.svg" onerror="this.onerror=null;this.src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="Apple Device Model Name"/></a><div class="content"><a class="title" href="/posts/31bc9bc5/" title="Apple Device Model Name">Apple Device Model Name</a><time datetime="2020-11-17T00:00:00.000Z" title="发表于 2020-11-17 00:00:00">2020-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/209ca420/" title="App Store 多账号自动登录器"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/performance_overview_p9bm.svg" onerror="this.onerror=null;this.src='https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/blog/loading.gif'" alt="App Store 多账号自动登录器"/></a><div class="content"><a class="title" href="/posts/209ca420/" title="App Store 多账号自动登录器">App Store 多账号自动登录器</a><time datetime="2020-10-04T00:00:00.000Z" title="发表于 2020-10-04 00:00:00">2020-10-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/8ba628ad/" title="隐私政策">隐私政策</a><time datetime="2020-06-20T00:00:00.000Z" title="发表于 2020-06-20 00:00:00">2020-06-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Licardo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img class="icp-icon" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/L1cardo/l1cardo.github.io/blog/themes/butterfly/source/img/upyun.png" style="max-height:1.2em"><span></span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.staticfile.org/hexo-theme-butterfly/4.13.0/js/utils.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-butterfly/4.13.0/js/main.min.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/5.0.33/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'blog-comment-2ggu4dqb436a1407',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'blog-comment-2ggu4dqb436a1407',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js').then(init)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="https://cdn.staticfile.org/hexo-theme-butterfly/4.13.0/js/search/local-search.min.js"></script></div></div></body></html>
